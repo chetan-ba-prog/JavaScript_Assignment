@@ -1,0 +1,30 @@
+//9) Subhash and Mukesh program
+function Person(firstName,lastName,age,skills,dateOfbirth,address,married,profession)
+{
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.skills = skills;
+    this.dateOfbirth = dateOfbirth;
+    this.address = address;
+    this.married = married;
+    this.profession = profession;
+}
+Subhash = new Person("Subhash","Reddy",91,['java','c#'],"03/04/1966",{city:"Bangalore",pincode:560003},"false","AnalystA4");
+Mukesh = new Person("Mukesh",51,["html","css"],"08/03/1979","false","JrAnalyst");
+Aadil = new Person("Aadil",18,"02/09/2000","false","film");
+
+var Mukesh = Object.create(Subhash); //inheriting the common properties/storing Subhash object in Mukesh
+var Aadil = Object.create(Mukesh);  //it has become Heirarchical inheritance now--> Subhash is a supermost class 
+//var Aadil = Object.create(Subhash);
+print = function()
+{
+    console.log(Subhash);
+    console.log(Mukesh.lastName);
+    console.log(Mukesh.address);
+    console.log(Aadil.lastName);
+    console.log(Aadil.skills);
+    console.log(Aadil.address);
+    console.log(Aadil.firstName);
+}();
+

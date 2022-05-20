@@ -1,0 +1,24 @@
+//8) Creating a Person dynamic object
+function Person(firstName,lastName,age,skills,dateOfbirth,address,married,profession)
+{
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.skills = skills;
+    this.dateOfbirth = dateOfbirth;
+    this.address = address;
+    this.married = married;
+    this.profession = profession;
+}
+
+Person1 = new Person("chetan","reddy",69,['java','c#'],"07/04/1999",{city:"Bangalore",pincode:560064},"false","AnalystA4");
+Person2 = new Person("manjunath","reddy",39,["c","c#"],"01/03/1997",{city:"Hindupur",pincode:663126},"false","AnalystA10");
+
+console.log(Person1);
+console.log(Person2);
+
+print=function()       //printing the object using Global print method.
+{
+    console.log(Person1);
+    console.log(Person2);
+}();

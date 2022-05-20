@@ -1,0 +1,36 @@
+//1) make a Rectangle class that stores width and Height, make a few instances and print out the proprties. Modify a few of the properties
+//and print out the results again.
+
+var Rectangle = function(width,height) //declaring object with "constructor function"
+{
+    this.width = width;
+    this.height = height;
+    this.area = function()
+    {
+        console.log("Area of the Rectangle is : " +this.width * this.height);
+    }
+} 
+
+var myRect1 = new Rectangle(10,20); //calling objects/making intances
+var myRect2 = new Rectangle(30,40);
+var myRect3 = new Rectangle(50,60);
+var myRect4 = new Rectangle(30,90);
+
+console.log(myRect1.width); //calling objects' properties
+console.log(myRect1.height);
+myRect1.area();
+console.log("---------------------");
+//document.write(myRect1.width);
+//document.write(myRect1.height);
+console.log(myRect2.width); //calling objects' properties
+console.log(myRect2.height);
+myRect2.area();
+console.log("---------------------")
+console.log(myRect3.width); //calling objects' properties
+console.log(myRect3.height);
+myRect3.area();
+console.log("---------------------")
+console.log(myRect4.width); //calling objects' properties
+console.log(myRect4.height);
+myRect4.area();
+console.log("---------------------")

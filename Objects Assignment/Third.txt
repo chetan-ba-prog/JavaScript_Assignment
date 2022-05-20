@@ -1,0 +1,13 @@
+//3) Assuming that the Rectangle contructor takes a width and height, why does the following output 20 instead of 200?
+//this keyword is used to differentiate between Global var and Local Var.
+
+Rectangle.prototype.getAreaForRect = function(width,height)  //this is because of Global scope and LOcal scope.
+{
+    console.log("Getting Area using prototype property : " +width * height);
+}
+
+console.log(Rectangle.prototype);
+myRect1.getAreaForRect(4,5); //calling method which is created using prototype property
+myRect2.getAreaForRect(5,6);
+myRect3.getAreaForRect(7,8);
+myRect4.getAreaForRect(11,2);
